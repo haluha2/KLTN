@@ -1,0 +1,7 @@
+data/
+model/
+<<<<<<< HEAD
+static/img/upload_images/
+=======
+static/img/upload_images
+>>>>>>> b989fccff315961d8b2459dc470fd331d7cfd42d

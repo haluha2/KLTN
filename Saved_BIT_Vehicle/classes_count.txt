@@ -1,0 +1,1 @@
+{"Microbus": 707, "Sedan": 4756, "Truck": 665, "SUV": 1093, "Bus": 438, "Minivan": 388}

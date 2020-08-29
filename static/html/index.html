@@ -1,0 +1,123 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TM">
+    <!--
+    <link rel="shortcut icon" href="static/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon_io/favicon-16x16.png">
+    -->
+    <link rel="shortcut icon" href="static/img/logo/Logo2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/logo/Logo2.png">
+    
+    <link rel="manifest" href="static/favicon_io/site.webmanifest">
+    <!-- Bootstrap core CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="static/css/styles.css" rel="stylesheet">
+    <!-- Include JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="TM">
+
+  <title>KLTN - Vehicle Image Retrieval</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+  <!--
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  -->
+  <!-- Custom styles for this template -->
+  <link href="static/css/styles.css" rel="stylesheet">
+
+  <!-- Include JQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
+  <!--
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  -->
+
+</head>
+
+<body>
+    <div>
+        <!--<h1 class="main_title">Vehicle Image Retrival</h1>-->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#" style="margin: 0 auto;">
+                <img src="static/img/logo/Logo3.png" height="30" alt="">
+            </a>
+        </nav>
+
+        <br>
+        <form class="form-inline" id="tweet_form" onsubmit="return false">
+            <label class="sr-only" for="inlineFormInput">Name</label>
+
+            <div class="col-sm-4">
+                <div class="center" style="margin-bottom: 20px;">
+                    <img src="static/img/logo/Logo3.png" width="300px" max-width="300px">
+                </div>
+                <div class="input-group">
+                    <div class="custom-file">
+                        <input type="file" class="form-control custom-file-input" id="fileInputImg"
+                               aria-describedby="fileInputImg" lang="vi">
+                        <label id="txtImgName" class="custom-file-label" for="fileInputImg">Choose image</label>
+                    </div>
+                </div>
+                <!--<div class="title-text-img">Chọn 1 hình ảnh:</div>-->
+                <br>
+                <div class="thumb" id="imgOrigin"></div>
+                <br>
+            </div>
+            <div id="rs" class="col-sm-7 custom-scrollbar-js p-2" style="padding-top: 10px;">
+                <p id="count_results" class="hide">Found xxx results</p>
+                <div class="center">
+                    <div id="result_imgs">
+                    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+                </div>
+            </div>
+    </div>
+
+    <!--
+    <div class="col-sm-6 row" style="margin: 50px auto;align-content: center;transform: translate(14%, 10px);">
+        <div class="col-sm-8" style="padding-left: 0px;">
+            <input type="file" class="form-control mb-2 mr-sm-2 mb-sm-0" id="fileInputImg" style="width: inherit;">
+        </div>
+        <div class="col-sm-3" style="padding-left: 0px;">
+            <input type="submit" class="form-control mb-2 mr-sm-2 mb-sm-0 btn btn-primary" id="btnSubmit" value="Search" style="height: 44px;">
+        </div>
+    </div>
+    -->
+    </form>
+    <div id="preloader" style="display: none;">
+        <center><img class="loading-img" src="static/img/loading.gif" /></center>
+    </div>
+
+    <!--<div id="loader" class="loader hide" style="margin: auto;margin-bottom: 50px;"></div>
+    <div id="preloader hide"></div>
+    <div id="result_imgs" class="container center">
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    </div>-->
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Graduation thesis of Ho Truong Nhat Minh and Vo Trong Trung (2020) - Supervisor: Phung Thai Thien Trang</span>
+        </div>
+    </footer>
+    <!-- Include custom JavaScript -->
+    <script src="static/js/app.js"></script>
+</body>
+</html>
